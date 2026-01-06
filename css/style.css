@@ -47,4 +47,6 @@ img {
 }
 .cover-home{
     background-image: url(../images/menu_01.jpg);
+    background-color:rgba(255,255,255,0.8);
+    background-blend-mode:lighten;
 }
