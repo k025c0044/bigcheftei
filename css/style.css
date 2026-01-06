@@ -28,5 +28,15 @@ img {
     padding-top: .5rem;
 }
 .logo {
-    width: 210px;
+    width: 400px;
+}
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    font-size: 1rem;
+    list-style: none;
+}
+.main-nav a {
+    color: #000;
 }
