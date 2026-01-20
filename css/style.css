@@ -46,16 +46,6 @@ h1 {
 .logo {
     width: 50%;
 }
-.cover {
-    background-size: cover;
-    background-position: center bottom;
-    height: 400px;
-}
-.cover-home{
-    background-image: url(../images/menu_01.jpg);
-    background-color:rgba(255,255,255,0.7);
-    background-blend-mode:lighten;
-}
 .hero {
     height: 60vh;
     background-image: url(../images/menu_01.jpg);
@@ -82,12 +72,11 @@ h1 {
     width: 50%;
     margin-bottom: 4px;
 }
-
-
-
 h1 {
     text-align: center;
 }
+
+
 /* フッター
 ---------------------------------- */
 .info {
@@ -105,9 +94,4 @@ h1 {
 }
 footer p {
     text-align: center;
-}
-
-.hero {
-    height: 60vh;
-    background-image: url(../images/menu_01.jpg);
 }
