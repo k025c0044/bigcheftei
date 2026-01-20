@@ -56,8 +56,36 @@ h1 {
     background-color:rgba(255,255,255,0.7);
     background-blend-mode:lighten;
 }
+.hero {
+    height: 60vh;
+    background-image: url(../images/menu_01.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0.35);
+}
+.hero-content {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero-logo {
+    width: 50%;
+    margin-bottom: 4px;
+}
 
-h3{
+
+
+h1 {
     text-align: center;
 }
 /* フッター
@@ -77,4 +105,9 @@ h3{
 }
 footer p {
     text-align: center;
+}
+
+.hero {
+    height: 60vh;
+    background-image: url(../images/menu_01.jpg);
 }
