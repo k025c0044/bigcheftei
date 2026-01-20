@@ -46,6 +46,9 @@ h1 {
 .logo {
     width: 50%;
 }
+
+/* ヘッダー画像
+------------------------------*/
 .hero {
     height: 60vh;
     background-image: url(../images/menu_01.jpg);
@@ -76,6 +79,54 @@ h1 {
     text-align: center;
 }
 
+/*　メニュー
+--------------------------- */
+
+.menu-grid {
+    display: grid;
+    gap: 24px;
+}
+
+@media screen and (min-width: 768px) {
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 900px;
+        margin: auto;
+    }
+}
+
+.menu-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.menu-card img {
+    width: 100%;
+    display: block;
+}
+
+.menu-card h3 {
+    margin: 16px 0 8px;
+}
+
+.price {
+    font-size: 32px;
+    color: #e60012;
+    font-weight: bold;
+}
+
+.tax {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.note {
+    font-size: 12px;
+    color: #666;
+    padding: 0 12px 16px;
+}
 
 /* フッター
 ---------------------------------- */
