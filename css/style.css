@@ -39,9 +39,11 @@ header {
 .main-nav li {
     text-emphasis: none;
     flex-basis: 25%;
+}
+.main-nav a {
     color: #000;
 }
-.main-nav li:hover {
+.main-nav a:hover {
     color: #e60012;
 }
 h1 {
