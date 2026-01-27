@@ -88,22 +88,71 @@ h1 {
 /*　メニュー
 --------------------------- */
 
+.menu-h1 {
+    text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  background: white;
+  padding: 20px;
+  margin: 0;
+}
+
 .menu-grid {
     display: grid;
     gap: 24px;
+    max-width: 1200px;
+    margin: 80px auto;
+    grid-template-columns: repeat(2, 1fr);
 }
 
-.menu-card {
+.menu-grid .menu-card {
     background: #fff;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
     text-align: center;
 }
 
 .menu-card img {
     width: 100%;
     display: block;
+    height: 260px;
+    object-fit: cover;
+}
+
+.menu-body {
+    padding: 30px;
+    text-align: center;
+    display: block;
+}
+
+.menu-body h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.menu-tags {
+    margin-bottom: 15px;
+}
+
+.menu-tags span {
+  display: inline-block;
+  background: red;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 8px;
+  margin: 0 5px 5px;
+  font-weight: bold;
+}
+
+.menu-option {
+  margin: 15px 0;
+  line-height: 1.7;
+}
+
+.menu-note {
+  font-size: 14px;
+  line-height: 1.7;
 }
 
 .menu-card h3 {
@@ -120,11 +169,58 @@ h1 {
     font-size: 14px;
     margin-bottom: 8px;
 }
+
 .note {
     font-size: 12px;
     color: #666;
     padding: 0 12px 16px;
 }
+
+.menu-section {
+  max-width: 1200px;
+  margin: 80px auto;
+  background-color: #f2f2f2;
+}
+
+.menu-section-title {
+  text-align: center;
+  padding: 30px 0px;
+  
+  font-size: 32px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+/* カード本体 */
+.menu-section .menu-card {
+  display: flex;
+  background: white;
+  margin-bottom: 40px;
+}
+
+.menu-image {
+  flex: 1;
+}
+
+.menu-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.menu-text {
+  flex: 1;
+  padding: 40px;
+  line-height: 1.9;
+}
+
+.menu-title-red {
+  color: red;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
 
 /* ショップ
 ---------------------------------- */
@@ -288,13 +384,7 @@ footer p {
 /* スマホ対応
 -------------------------- */
 
-@media screen and (min-width: 768px) {
-    .menu-grid {
-        grid-template-columns: repeat(2, 1fr);
-        max-width: 900px;
-        margin: auto;
-    }
-}
+
 @media (max-width: 768px) {
     .shop-card {
         padding: 20px 15px;
@@ -339,5 +429,25 @@ footer p {
 
   .concept-title {
     font-size: 22px;
+  }
+
+  .menu-card {
+    flex-direction: column;
+  }
+
+  .menu-text {
+    padding: 25px 20px;
+  }
+
+  .menu-section-title {
+    font-size: 24px;
+  }
+  .menu-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .menu-card img {
+    height: 220px;
   }
 }
