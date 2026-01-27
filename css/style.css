@@ -87,14 +87,6 @@ h1 {
     gap: 24px;
 }
 
-@media screen and (min-width: 768px) {
-    .menu-grid {
-        grid-template-columns: repeat(2, 1fr);
-        max-width: 900px;
-        margin: auto;
-    }
-}
-
 .menu-card {
     background: #fff;
     border-radius: 12px;
@@ -193,7 +185,7 @@ h1 {
     color: white;
     padding: 12px 20px;
     text-decoration: none;
-    
+
 }
 
 .btn-detail {
@@ -220,4 +212,38 @@ h1 {
 }
 footer p {
     text-align: center;
+}
+
+/* スマホ対応
+-------------------------- */
+
+@media screen and (min-width: 768px) {
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 900px;
+        margin: auto;
+    }
+}
+@media (max-width: 768px) {
+    .shop-card {
+        padding: 20px 15px;
+    }
+
+    .shop-name {
+        font-size: 20px;
+    }
+    .shop-inner {
+        flex-direction: column-reverse;
+    }
+    .shop-image img {
+        max-height: 250px;
+        object-fit: cover;
+    }
+    .shop-buttons {
+        flex-direction: column;
+    }
+    .btn-map,
+    .btn-detail {
+        text-align: center;
+    }
 }
