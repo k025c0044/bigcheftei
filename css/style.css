@@ -30,15 +30,19 @@ header {
     top: 0;
     z-index: 999;
 }
-header ul {
+.main-nav {
     display: flex;
     justify-content: space-around;
     list-style: none;
     text-align: center;
 }
-header ul li {
+.main-nav li {
+    text-emphasis: none;
     flex-basis: 25%;
     color: #000;
+}
+.main-nav li:hover {
+    color: #e60012;
 }
 h1 {
     text-align: center;
