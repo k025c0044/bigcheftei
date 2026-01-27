@@ -128,6 +128,81 @@ h1 {
     padding: 0 12px 16px;
 }
 
+/* ショップ
+---------------------------------- */
+
+.shop-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.shop-card {
+    background: white;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.shop-inner {
+    display: flex;
+    gap: 30px;
+}
+
+.shop-info {
+    flex: 1;
+}
+
+.shop-name {
+    font-size: 24px;
+    border-bottom: 3px solid red;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.shop-info p {
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.shop-image {
+    flex: 1;
+}
+
+.shop-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.shop-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.btn-map {
+    background: #4285f4;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    
+}
+
+.btn-detail {
+    border: 2px solid black;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: black;
+}
+
 /* フッター
 ---------------------------------- */
 .info {
